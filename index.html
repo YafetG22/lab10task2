@@ -7,45 +7,56 @@
     <!-- Materialize CSS Framework -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 
-    <!-- Material Icons (optional but nice) -->
+    <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
         body {
-            background: #f0f3f7;
+            background: #eef2f5;
         }
+
+        .page-title {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 36px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2e4053;
+        }
+
         .card-content p {
             font-size: 17px;
             line-height: 1.6;
         }
-        .section-title {
-            font-size: 26px;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 10px;
+
+        pre {
+            background: #f4f6f7;
+            padding: 12px;
+            border-radius: 8px;
+            overflow-x: auto; /* prevents overflow problems */
+            white-space: pre-wrap; /* ensures wrapping */
+            font-size: 14px;
         }
-        .page-title {
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            font-size: 36px;
-            color: #34495e;
-            font-weight: 700;
-        }
-        .subtitle {
-            text-align: center;
-            color: #777;
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
+
         .url-box {
-            background: #eaf2f8;
-            padding: 18px;
-            border-radius: 10px;
-            font-size: 20px;
+            background: #d6eaf8;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #aed6f1;
             text-align: center;
-            margin-top: 20px;
-            border: 1px solid #d6eaf8;
+            font-size: 20px;
             font-weight: 600;
         }
     </style>
@@ -63,10 +74,20 @@
             <div class="card-content">
                 <span class="section-title">Framework Used: Materialize CSS</span>
                 <p>
-                    For Problem 2, I chose <strong>Materialize CSS</strong> as my web development framework.
-                    Materialize is a modern, front-end CSS framework that provides pre-built components,
-                    responsive layout grids, and clean visual design—all without using Bootstrap or jQuery.
-                    It is lightweight and easy to integrate using a simple CDN link.
+                    For this assignment, I selected <strong>Materialize CSS</strong> as my web development framework.
+                    Materialize is a modern front-end CSS library based on Google’s Material Design principles.
+                    It provides pre-styled components such as cards, grids, buttons, and typography, which makes
+                    building visually appealing layouts much simpler.
+                </p>
+                <p>
+                    Materialize is permitted by the assignment guidelines because it is:
+                    <br>• A front-end framework  
+                    <br>• Not Bootstrap  
+                    <br>• Not jQuery  
+                    <br>• Easy to add through a CDN  
+                </p>
+                <p>
+                    This allowed me to meet the problem requirements while keeping the setup simple.
                 </p>
             </div>
         </div>
@@ -76,57 +97,90 @@
             <div class="card-content">
                 <span class="section-title">How I Installed / Added the Framework</span>
                 <p>
-                    Materialize CSS does not need installation. I added it to my webpage using the official CDN:
+                    Materialize CSS does not require installation. I added it to my webpage using the official CDN link
+                    inside the <code>&lt;head&gt;</code> section of my HTML file.
                 </p>
 
-                <pre><code>&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"&gt;</code></pre>
+                <pre><code>
+&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" 
+rel="stylesheet"&gt;
+                </code></pre>
 
                 <p>
-                    After adding this link inside the &lt;head&gt; section of my HTML page, I was able to use
-                    Materialize classes such as containers, cards, buttons, columns, and typography.
+                    Once this CDN was included, I could immediately use Materialize components such as:
+                    <br>• <code>container</code> for layout  
+                    <br>• <code>card</code> for section formatting  
+                    <br>• <code>row</code> and <code>col</code> for responsive grids  
+                    <br>• Material icons  
+                </p>
+                <p>
+                    No installation, command line tools, or external setup was needed, which made the framework easy to work with.
                 </p>
             </div>
         </div>
 
-        <!-- How the Page Was Built -->
+        <!-- How I Built the Page -->
         <div class="card">
             <div class="card-content">
                 <span class="section-title">How I Built the Page</span>
                 <p>
-                    I built this webpage using Materialize’s components. I wrapped all content inside a Materialize 
-                    <code>container</code> and used <code>card</code> elements to organize the sections.
-                    The framework automatically provides spacing, alignment, visual structure, and responsive styling.
+                    I structured the webpage using Materialize’s responsive grid system and card components.
+                    Each major section of the assignment (framework used, installation, building process, difficulties)
+                    is placed inside its own card to create a clean and readable layout.
                 </p>
+
                 <p>
-                    I also added custom CSS to match the assignment style and improve readability.
+                    Materialize automatically handles:
+                    <br>• Spacing  
+                    <br>• Typography  
+                    <br>• Consistent design  
+                    <br>• Mobile responsiveness  
+                </p>
+
+                <p>
+                    I added additional custom CSS for body background, card spacing, title styling, and code-block formatting
+                    to make the page visually polished and easy to read.
                 </p>
             </div>
         </div>
 
-        <!-- Difficulties Encountered -->
+        <!-- Difficulties -->
         <div class="card">
             <div class="card-content">
                 <span class="section-title">Difficulties Encountered & How I Solved Them</span>
 
-                <p><strong>Difficulty 1:</strong> At first, the website showed a 404 error.</p>
-                <p><strong>Cause:</strong> GitHub Pages requires the main file to be named <code>index.html</code>.</p>
-                <p><strong>Solution:</strong> I renamed my file to <code>index.html</code>, and GitHub Pages loaded it correctly.</p>
+                <p><strong>Difficulty 1 – 404 Error on GitHub Pages</strong></p>
+                <p>
+                    The website initially displayed a <code>404 File Not Found</code> error.
+                    GitHub Pages requires the main file to be named <strong>index.html</strong>.  
+                    After renaming the file, GitHub Pages successfully recognized and hosted it.
+                </p>
 
-                <br>
+                <p><strong>Difficulty 2 – Materialize styling not appearing</strong></p>
+                <p>
+                    When I first loaded the page, none of the Materialize styles applied.
+                    I realized I forgot to include the CDN link. Adding it fixed the issue instantly.
+                </p>
 
-                <p><strong>Difficulty 2:</strong> Materialize components were not applying their styles.</p>
-                <p><strong>Cause:</strong> I forgot to include the Materialize CDN link.</p>
-                <p><strong>Solution:</strong> Adding the CDN inside the head section fixed the issue immediately.</p>
+                <p><strong>Difficulty 3 – Page updates not appearing</strong></p>
+                <p>
+                    GitHub Pages does not update immediately after a commit.
+                    I learned that deployment takes around 10–20 seconds.
+                    Refreshing the page after waiting solved the issue.
+                </p>
 
-                <br>
-
-                <p><strong>Difficulty 3:</strong> The site didn’t update right away.</p>
-                <p><strong>Solution:</strong> I learned GitHub Pages takes 10–20 seconds to rebuild after each commit.</p>
+                <p><strong>Difficulty 4 – Code block overflow</strong></p>
+                <p>
+                    The CDN line was too long and broke the layout.  
+                    I fixed this by adding CSS:
+                    <code>white-space: pre-wrap;</code> and <code>overflow-x: auto;</code>
+                    to ensure code wraps nicely and scrolls if needed.
+                </p>
 
             </div>
         </div>
 
-        <!-- Final URL -->
+        <!-- URL -->
         <div class="card">
             <div class="card-content">
                 <span class="section-title">Final Website URL</span>
@@ -137,9 +191,6 @@
         </div>
 
     </div>
-
-    <!-- Materialize JS (optional, not needed for this assignment) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>
 </html>
